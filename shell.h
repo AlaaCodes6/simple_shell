@@ -39,11 +39,11 @@ char *path_buffer(char **av, char *PATH, char *dup);
 int check_builtin(char **av, char *buffer, int exitstatus);
 int execute(char **av, char *buffer, char *fullpathbuff);
 char **splitter(char *buffer);
-int _splitPATH(char *str);
-int _PATHstrcmp(const char *s1, const char *s2);
+int _splitpath(char *str);
+int _cmpPATHenv(const char *s1, const char *s2);
 char *_chain(char *tmp, char **av, char *tok);
 char *_getenv(const char *name);
-int _env(void);
+int _myenv(void);
 
 
 

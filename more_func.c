@@ -98,7 +98,7 @@ int check_builtin(char **av, char *buffer, int exitstatus)
 
 	if (_strcmp(av[0], "env") == 0)
 	{
-		_env();
+		_myenv();
 		for (a = 0; av[a]; a++)
 			free(av[a]);
 		free(av);

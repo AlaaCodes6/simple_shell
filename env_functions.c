@@ -29,7 +29,7 @@ char *_getenv(const char *name)
 
 	for (i = 0; environ[i]; i++)
 	{
-		j = _PATHstrcmp(name, environ[i]);
+		j = _cmpPATHenv(name, environ[i]);
 		if (j == 0)
 			return (environ[i]);
 	}
